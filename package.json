@@ -1,0 +1,28 @@
+{
+  "name": "words",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "author": "devmiandiaz",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=6.4.x <7",
+    "npm": ">=4.5.x <5",
+    "yarn": "0.24.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devmiandiaz/words.git"
+  },
+  "homepage": "https://github.com/devmiandiaz/words#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "fetch-ponyfill": "^4.0.0",
+    "timsort": "^0.3.0",
+    "yargs": "^8.0.1"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "yarn": "npm run --silent yarn-bin -- install --ignore-scripts",
+    "yarn-bin": "node bin/yarn-${npm_package_engines_yarn}.js"
+  }
+}
